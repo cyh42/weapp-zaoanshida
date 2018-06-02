@@ -1,0 +1,16 @@
+<view class="wrap">
+  <view class="circle-box">
+    <canvas class="circle" style="z-index: -99; width:200px; height:200px;" canvas-id="canvasCircle">
+    </canvas>
+    <canvas class="circle" style="width:200px; height:200px;" canvas-id="canvasArcCir">
+    </canvas>
+    <view class="draw_btn2">{{done}}毫升</view>
+    <view class="draw_btn" bindtap="modalinput">添加</view>
+    <view class="draw_btn1">目标2000毫升</view>
+  </view>
+  <button class="draw_btn3" bindtap="clean" size='mini'>重置</button>
+</view>
+
+<modal hidden="{{hiddenmodalput}}" title="输入值（毫升）" confirm-text="保存" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+  <input type='text' placeholder="输入值" bindinput="voteTitle" auto-focus/>
+</modal>

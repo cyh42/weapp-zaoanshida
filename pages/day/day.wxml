@@ -1,0 +1,180 @@
+<view class="content">
+  <image class="main-bg" src="{{src}}"></image>
+
+  <view class="body">
+    <view class="widgets" style="opacity:{{0.85}}">
+      <view class="widgets__item">
+        <view class="flex item">
+          <view class='item-left'>
+            <image class='img' src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          </view>
+          <view class='item-middle'>
+            <view class='main'>{{userInfo.nickName}}</view>
+            <view class='sub'>{{self}}</view>
+          </view>
+          <view class='item-right' bindtap='turn'>
+            <image class='img1' src="../images/change.png" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="body">
+    <view class="widgets" style="opacity:{{0.8}}">
+      <block wx:for-items="{{list}}">
+        <view class="widgets__item">
+          <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}">
+            <image class="widgets__info-img1" src="../images/score.png" mode="aspectFill" />
+            <text class="widgets__info-name">当前积分</text>
+            <text>{{score}}分</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="body">
+    <view class="widgets" style="opacity:{{0.8}}">
+      <block wx:for-items="{{list}}">
+        <view class="widgets__item">
+          <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}">
+            <image class="widgets__info-img1" src="../images/rc.png" mode="aspectFill" />
+            <text class="widgets__info-name">签到总天数</text>
+            <text>{{total}}天</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="body">
+    <view class="widgets" style="opacity:{{0.75}}">
+      <block wx:for-items="{{list}}">
+        <view class="widgets__item">
+          <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}">
+            <image class="widgets__info-img1" src="../images/lx.png" mode="aspectFill" />
+            <text class="widgets__info-name">连续签到天数</text>
+            <image class="widgets__info-name1" src="{{img}}"></image>
+            <text>{{continued}}天</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="body">
+    <view class="widgets" style="opacity:{{0.8}}">
+      <block wx:for-items="{{list}}">
+        <view class="widgets__item">
+          <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}">
+            <image class="widgets__info-img1" src="../images/lxmax.png" mode="aspectFill" />
+            <text class="widgets__info-name">最大连续签到</text>
+            <text>{{max}}天</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="body">
+    <view class="widgets" style="opacity:{{0.75}}">
+      <block wx:for-items="{{list}}">
+        <view class="widgets__item">
+          <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+            <image class="widgets__info-img1" src="../images/ever.png" mode="aspectFill" />
+            <text class="widgets__info-name">历史签到记录</text>
+            <image class="widgets__info-img" src="../images/arrowright.png" mode="aspectFill" />
+          </view>
+          <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+            <block wx:for-items="{{taskListme}}">
+              <view class="cyh">
+                <view>{{item.time}}</view>
+                <view>{{item.rank}}</view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <!--<view class="body">
+    <view class="widgets" style="opacity:{{0.75}}">
+      <block wx:for-items="{{list2}}">
+        <view class="widgets__item">
+          <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle2">
+            <image class="widgets__info-img1" src="../images/more.png" mode="aspectFill" />
+            <text class="widgets__info-name">更多功能</text>
+          </view>
+          <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+            <block>
+              <view class='flex1 item1'>
+                <view class='item1-1' bindtap='photo'>
+                  <image src='../images/photo.png'></image>
+                  <view class='sub'>学籍照片</view>
+                </view>
+                <view class='item1-2' bindtap='library'>
+                  <image src='../images/book.png'></image>
+                  <view class='sub'>借阅到期提醒</view>
+                </view>
+                <view class='item1-3' bindtap='classroom'>
+                  <image src='../images/classroom.png'></image>
+                  <view class='sub'>明日空闲教室</view>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>-->
+
+  <view class="body">
+    <view class="widgets" style="opacity:{{0.75}}">
+      <block wx:for-items="{{list1}}">
+        <view class="widgets__item">
+          <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle1">
+            <image class="widgets__info-img1" src="../images/setting.png" mode="aspectFill" />
+            <text class="widgets__info-name">设置</text>
+            <image class="widgets__info-img" src="../images/arrowright.png" mode="aspectFill" />
+          </view>
+          <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+            <block>
+              <view class='flex1 item1'>
+                <view class='item1-1' bindtap='Beijing'>
+                  <image src='../images/bj.png'></image>
+                  <view class='sub'>个性换肤</view>
+                </view>
+                <view class='item1-2' bindtap='help'>
+                  <image src='../images/help.png'></image>
+                  <view class='sub'>帮助中心</view>
+                </view>
+                <view class='item1-3' bindtap='feedback'>
+                  <image src='../images/feedback.png'></image>
+                  <view class='sub'>反馈与建议</view>
+                </view>
+                <view class='item1-4' bindtap='zan'>
+                  <image src='../images/zan.png'></image>
+                  <view class='sub'>推荐给好友</view>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="body">
+    <view class="widgets" style="opacity:{{0.75}}">
+      <view class="widgets__item">
+        <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}" bindtap='about'>
+          <image class="widgets__info-img1" src="../images/about.png" mode="aspectFill" />
+          <text class="widgets__info-name">关于</text>
+          <image class="widgets__info-img55" src="../images/arrowright.png" mode="aspectFill" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

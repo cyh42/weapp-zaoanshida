@@ -1,0 +1,30 @@
+<view class="content">
+  <image class="main-bg" src="{{src}}"></image>
+
+  <view class="play">
+    <image class="money" src="../images/money.png" bindtap="Money" />
+  </view>
+
+  <view>
+    <view class="flex item">
+      <view class='item-top'>
+        <image src="{{userInfo.avatarUrl}}" background-size="cover" bindtap='Weather'></image>
+      </view>
+      <view class='item-middle'>
+        <view class="calendarSign">
+          <button wx:if="{{flag==2}}" style="color:black" bindtap="calendarSign" plain='true'>早起签到</button>
+          <button wx:if="{{flag==1}}" plain='true' bindtap="calendarSignDone">今日已签到</button>
+          <button wx:if="{{flag==0}}" plain='true'>正在登录...</button>
+          <button wx:if="{{flag==3}}" plain='true'>签到中...</button>
+        </view>
+      </view>
+      <view class='item-down'>
+        <view class='PM'>{{w}} {{h}}:{{m}}</view>
+        <view class='PM'>{{cyh}}</view>
+      </view>
+      <view class='item-down1'>
+        <view>©2018 demon军团</view>
+      </view>
+    </view>
+  </view>
+</view>

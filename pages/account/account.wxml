@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="login-icon">
+    <image class="login-img" src="http://lc-wdfncj3w.cn-n1.lcfile.com/2ff0ba7a3d37ff6a95de.jpg"></image>
+  </view>
+  <view class="login-from">
+
+    <!--账号-->
+    <view class="inputView">
+      <image class="nameImage" src="../images/name.png"></image>
+      <label class="loginLab">姓名</label>
+      <input class="inputText" placeholder="请输入姓名" bindinput="Input" />
+    </view>
+    <view class="line"></view>
+
+    <!--专业年级-->
+    <view class="inputView">
+      <image class="keyImage" src="../images/key.png"></image>
+      <label class="loginLab">专业年级</label>
+      <picker class="inputText" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <input placeholder="{{picker}}" disabled='true' />
+      </picker>
+    </view>
+
+    <!--按钮-->
+    <view class="loginBtnView">
+      <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">绑定</button>
+    </view>
+
+    <view class='try' bindtap='try'>
+      <text>游客试用</text>
+    </view>
+
+    <view class='text' bindtap='solve'>
+      <text>👀无法正常启动解决方法</text>
+    </view>
+  </view>
+</view>

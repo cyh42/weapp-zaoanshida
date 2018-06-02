@@ -1,0 +1,293 @@
+page {
+  height: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+}
+
+.main-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.index {
+  background-color: #fbf9fe;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  flex: 1;
+  min-height: 100%;
+  font-size: 32rpx;
+}
+
+.body {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.widgets__item {
+  margin-bottom: 16rpx;
+  background-color: #fff;
+  overflow: hidden;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  cursor: pointer;
+}
+.widgets1__item {
+  margin-bottom: 16rpx;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 20rpx;
+  cursor: pointer;
+}
+
+.widgets__info1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 16rpx;
+  justify-content: center;
+}
+
+.widgets__info {
+  font: 微软雅黑;
+  border-radius: 5rpx;
+  display: flex;
+  margin: 32rpx;
+  align-items: center;
+  flex-direction: row;
+}
+
+.widgets__info_show .widgets__info-img {
+  transform: rotate(-90deg);
+}
+
+.widgets__info-name {
+  flex: 1;
+}
+
+.widgets__info-img1 {
+  width: 64rpx;
+  height: 64rpx;
+  margin-left: 12rpx;
+  margin-right: 32rpx;
+}
+
+.widgets__info-img2 {
+  transition: transform 0.4s;
+}
+
+.widgets__info-img {
+  width: 32rpx;
+  height: 32rpx;
+  transition: transform 0.4s;
+  transform: rotate(90deg);
+}
+
+.widgets__list {
+  display: none;
+}
+
+.widgets__list .phoneText {
+  float: right;
+  margin-right: 22px;
+  color: #515151;
+}
+
+.widgets__list_show {
+  display: block;
+}
+
+.widget {
+  position: relative;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  padding-left: 30rpx;
+  padding-right: 50rpx;
+}
+
+.widget__arrow {
+  position: absolute;
+  top: 5rpx;
+  right: 44rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.widget__line {
+  content: " ";
+  position: absolute;
+  left: 40rpx;
+  top: 0;
+  right: 0;
+  height: 2rpx;
+  background-color: #f0f0f0;
+}
+
+.widget__line_first {
+  left: 0;
+  right: 0;
+  background-color: #d8d8d8;
+}
+
+.button-hover {
+  background-color: red;
+}
+
+.cyh {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30rpx;
+}
+
+.flex {
+  display: flex;
+  padding-top: 12rpx;
+  padding-bottom: 12rpx;
+}
+
+.item-left {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+}
+
+.item image {
+  width: 108rpx;
+  height: 108rpx;
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  border-radius: 50%;
+}
+
+.item-middle {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.item-middle .main {
+  margin-top: 5rpx;
+}
+
+.item-middle .sub1 {
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  font-size: 14px;
+  color: gray;
+}
+
+.item-right {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  text-align: right;
+  margin-right: 32rpx;
+}
+
+.item-right .main {
+  margin-bottom: 5rpx;
+}
+
+.btn_yzm {
+  font-size: 32rpx;
+  color: #eb602e;
+  border: 2rpx solid #eb602e;
+  border-radius: 20rpx;
+  padding-top: 0px;
+  height: 80rpx;
+  line-height: 30rpx;
+  display: table;
+}
+
+.btn_yzm text {
+  vertical-align: middle;
+}
+
+/*圆点数字标注*/
+.notice {
+  width: 28rpx;
+  height: 28rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #ec9e14;
+  border-radius: 50%;
+  position: absolute;
+  float: left;
+  /* margin-top: 8rpx;*/
+  top: 5rpx;
+  font-size: 15rpx;
+  right: 30rpx;
+  line-height: 30rpx;
+}
+
+/*顶部导航样式*/
+.navbar {
+  flex: none;
+  display: flex;
+  z-index: 50;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  background-color: #fff;
+  overflow: hidden;
+  border-top-left-radius:20rpx;
+  border-top-right-radius:20rpx;
+  cursor: pointer;
+}
+
+.navbar .item {
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: gray;
+  font-family: Microsoft YaHei;
+}
+
+.navbar .item.active {
+  color: #ec9e14;
+  font-size: 24rpx;
+  font-family: Microsoft YaHei;
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #ec9e14;
+  font-size: 24rpx;
+  color: gray;
+  font-family: Microsoft YaHei;
+}
+
+.flex-sub {
+  display:flex;
+}
+.sub2 {
+  text-decoration: underline;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  font-size: 14px;
+  color: gray;
+}
+.sub22 {
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  margin-left: 12rpx;
+  font-size: 14px;
+  color: gray;
+}
