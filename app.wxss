@@ -1,0 +1,3 @@
+@import 'style/weui.wxss';
+@import "style/index.wxss";
+@import "style/fontAwesome.wxss";

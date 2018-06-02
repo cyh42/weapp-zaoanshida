@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/sign/sign",
+    "pages/rank/rank",
+    "pages/day/day",
+    "pages/water/water",
+    "pages/feedback/feedback",
+    "pages/account/account",
+    "pages/help/help",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "早安石大",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#1992F5",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/sign/sign",
+        "iconPath": "img/sign.png",
+        "selectedIconPath": "img/sign1.png",
+        "text": "签到"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "iconPath": "img/rank.png",
+        "selectedIconPath": "img/rank1.png",
+        "text": "排行"
+      },
+      {
+        "pagePath": "pages/water/water",
+        "iconPath": "img/water.png",
+        "selectedIconPath": "img/water1.png",
+        "text": "补水"
+      },
+      {
+        "pagePath": "pages/day/day",
+        "iconPath": "img/about.png",
+        "selectedIconPath": "img/about1.png",
+        "text": "我"
+      }
+    ]
+  }
+}
