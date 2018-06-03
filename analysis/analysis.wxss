@@ -1,0 +1,154 @@
+page {
+  width: 100%;
+  background-color: #fff;
+}
+
+.circle-box {
+  text-align: center;
+  margin-top: 10vw;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  right: 30vw;
+  margin: auto;
+}
+
+.draw_btn {
+  width: 35vw;
+  position: absolute;
+  top: 23vw;
+  right: 30vw;
+  left: 0;
+  margin: auto;
+  font-size: 44px;
+}
+
+.draw_btn1 {
+  width: 35vw;
+  position: absolute;
+  top: 43vw;
+  right: 30vw;
+  left: 0;
+  margin: auto;
+  font-size: 14px;
+  color: gray;
+}
+
+.sub {
+  font-size: 14px;
+  color: gray;
+}
+
+.item1-1 {
+  width: 35vw;
+  position: absolute;
+  top: 110vw;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.item1-2 {
+  width: 35vw;
+  position: absolute;
+  top: 110vw;
+  right: 0;
+  left: 60vw;
+  margin: auto;
+}
+
+.item1-3 {
+  width: 35vw;
+  position: absolute;
+  top: 110vw;
+  right: 60vw;
+  left: 0;
+  margin: auto;
+}
+
+.item2-1 {
+  width: 35vw;
+  position: absolute;
+  top: 95vw;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.item2-2 {
+  width: 35vw;
+  position: absolute;
+  top: 95vw;
+  right: 0;
+  left: 60vw;
+  margin: auto;
+}
+
+.item2-3 {
+  width: 35vw;
+  position: absolute;
+  top: 95vw;
+  right: 60vw;
+  left: 0;
+  margin: auto;
+}
+
+.main1 {
+  font-size: 32px;
+  color: orange;
+}
+
+.main2 {
+  font-size: 32px;
+  color: red;
+  font-style: bold;
+}
+
+.main3 {
+  font-size: 32px;
+  color: green;
+}
+
+.draw_btn2-1 {
+  width: 35vw;
+  position: absolute;
+  top: 13vw;
+  right: 0;
+  left: 60vw;
+  margin: auto;
+  font-size: 32px;
+}
+
+.draw_btn2-2 {
+  width: 35vw;
+  position: absolute;
+  top: 26vw;
+  right: 0;
+  left: 60vw;
+  margin: auto;
+  font-size: 14px;
+  color: gray;
+}
+
+.draw_btn3-1 {
+  width: 35vw;
+  position: absolute;
+  top: 40vw;
+  right: 0;
+  left: 60vw;
+  margin: auto;
+  font-size: 32px;
+}
+
+.draw_btn3-2 {
+  width: 35vw;
+  position: absolute;
+  top: 53vw;
+  right: 0;
+  left: 60vw;
+  margin: auto;
+  font-size: 14px;
+  color: gray;
+}

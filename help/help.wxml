@@ -1,0 +1,204 @@
+<view class='content'>
+  <text class="issues-label">常见问题</text>
+  <view class="widgets">
+    <block wx:for-items="{{list}}">
+      <view class="widgets__item">
+        <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+          <text class="widgets__info-name">积分规则及获得方式</text>
+          <image class="widgets__info-img" src="../images/arrowright.png" mode="aspectFill" />
+        </view>
+        <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+          <block>
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>连续签到第1天-第5天：基础签到积分+3</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>连续签到第6天-第30天：基础签到积分+5</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>5:30~6:20，每天多积2分</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>6:20~7:00，每天多积1分</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>7:00~7:30，无额外积分</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>7:30~8:00，可以签到，没有积分，但不算中断</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>连续签到5天：额外获得15积分奖励</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>连续签到10天：额外获得20积分奖励</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>连续签到20天：额外获得50积分奖励</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>连续签到30天：额外获得100积分奖励</text>
+              </view>
+            </view>
+
+            <view class='flex1 item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>获取的积分将于每月1号自动清零</text>
+              </view>
+            </view>
+
+            <view class='flex1 item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>当连续签到中断后，则回到初始签到状态重新累计连续签到天数</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="widgets">
+    <block wx:for-items="{{list1}}">
+      <view class="widgets__item">
+        <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle1">
+          <text class="widgets__info-name">因系统时间与服务时间不一致签到失败</text>
+          <image class="widgets__info-img" src="../images/arrowright.png" mode="aspectFill" />
+        </view>
+        <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+          <block>
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>为防止作弊行为，签到时间以服务器时间为准，若检测到你手机的系统时间与服务器时间差值太大就会提示签到失败。建议先打开手机设置检查系统时间是否为中国标准时间（GMT+8），若仍无法正常签到请进入反馈页面提交反馈或与开发者取得联系。</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="widgets">
+    <block wx:for-items="{{list2}}">
+      <view class="widgets__item">
+        <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle2">
+          <text class="widgets__info-name">之前有签到历史，数据却被全部清空</text>
+          <image class="widgets__info-img" src="../images/arrowright.png" mode="aspectFill" />
+        </view>
+        <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+          <block>
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>开发者会定期对后台数据库进行清理，若发现昵称为空的用户将会删除其数据。</text>
+              </view>
+            </view>
+
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>解决方法：请点击右上角“…”，点击“关于早安石大”，进入新页面后再点击右上角“…”，点击“设置”，允许“早安石大”使用“我的用户信息”。若仍无法正常使用，请进入反馈页面提交反馈或与开发者取得联系。</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="widgets">
+    <block wx:for-items="{{list3}}">
+      <view class="widgets__item">
+        <view id="{{item.id}}" class="widgets__info {{item.open ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle3">
+          <text class="widgets__info-name">姓名、专业信息绑定有误</text>
+          <image class="widgets__info-img" src="../images/arrowright.png" mode="aspectFill" />
+        </view>
+        <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+          <block>
+            <view class='flex item'>
+              <view class='item-left'>
+                <text>•</text>
+              </view>
+              <view class='item-right'>
+                <text>请点击下方导航栏“我”，点击右上角“笔”图标，进入新页面后输入正确信息并点击绑定更新。</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="issues-label">PS:如有其他问题，请先尝试更新微信到最新版本后再试。如仍有问题，通过“我-设置-反馈与建议”联系开发者协助解决</view>
+</view>

@@ -1,0 +1,39 @@
+<view class="wrap">
+  <view class="circle-box">
+    <canvas class="circle" style="z-index: -99; width:200px; height:200px;" canvas-id="canvasCircle">
+    </canvas>
+    <canvas class="circle" style="width:200px; height:200px;" canvas-id="canvasArcCir">
+    </canvas>
+    <view class="draw_btn">{{q}}%</view>
+    <view class="draw_btn1">签到率</view>
+
+    <view class="draw_btn2-1">{{cnt}}</view>
+    <view class="draw_btn2-2">当前连续天数</view>
+    <view class="draw_btn3-1">{{max}}</view>
+    <view class="draw_btn3-2">最长连续天数</view>
+
+    <view class='flex2 item2'>
+      <view class='item2-3'>
+        <view class='main3'>{{done}}</view>
+      </view>
+      <view class='item2-1'>
+        <view class='main1'>{{begin}}</view>
+      </view>
+      <view class='item2-2'>
+        <view class='main2'>{{undone}}</view>
+      </view>
+    </view>
+
+    <view class='flex1 item1'>
+      <view class='item1-3'>
+        <view class='sub'>已签到</view>
+      </view>
+      <view class='item1-1'>
+        <view class='sub'>已开始</view>
+      </view>
+      <view class='item1-2'>
+        <view class='sub'>未签到</view>
+      </view>
+    </view>
+  </view>
+</view>
