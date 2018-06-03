@@ -3,7 +3,7 @@
     "pages/sign/sign",
     "pages/rank/rank",
     "pages/day/day",
-    "pages/water/water",
+    "pages/analysis/analysis",
     "pages/feedback/feedback",
     "pages/account/account",
     "pages/help/help",
@@ -35,16 +35,16 @@
         "text": "排行"
       },
       {
-        "pagePath": "pages/water/water",
-        "iconPath": "img/water.png",
-        "selectedIconPath": "img/water1.png",
-        "text": "补水"
+        "pagePath": "pages/analysis/analysis",
+        "iconPath": "img/analysis.png",
+        "selectedIconPath": "img/analysis1.png",
+        "text": "数据"
       },
       {
         "pagePath": "pages/day/day",
         "iconPath": "img/about.png",
         "selectedIconPath": "img/about1.png",
-        "text": "我"
+        "text": "我的"
       }
     ]
   }
